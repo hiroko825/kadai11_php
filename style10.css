@@ -1,0 +1,130 @@
+body {
+  width: 1000px;
+  font-family: Arial, sans-serif;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.logo {
+  width: 250px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+
+#search-container {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#search-input {
+  padding: 10px;
+  font-size: 14px; /* 変更 */
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  margin-right: 10px;
+}
+
+button {
+  padding: 10px 20px; /* 変更 */
+  font-size: 14px; /* 変更 */
+  border-radius: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+#search-results-header {
+  text-align: center;
+}
+
+#search-results-header h2 {
+  color: #333;
+  font-size: medium;
+}
+
+#search-results-header {
+  width: 100%;
+  margin-bottom: 20px; /* 変更 */
+}
+
+#related-news-box {
+  margin: 0 auto;
+  max-width: 100%;
+  background-color: #99ccff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.9);
+  margin-bottom: 20px;
+}
+
+.NEWS {
+  padding: 10px;
+  font-size: large;
+  font-weight: bold;
+}
+
+.news-container {min-width: 0;
+display: flex;
+flex-direction: column;
+}
+
+.container {
+width: 100%;
+margin: 0 auto;
+padding: 10px;
+display: flex;
+justify-content: space-between;
+background-color: #99ccff;
+}
+
+h2 {
+text-align: center;
+color: #333;
+font-weight: lighter;
+}
+
+.article {
+background-color: #fff;
+font-size: 14px; /* 変更 */
+margin-bottom: 20px; /* 変更 */
+margin-right: 10px;
+margin-left: 10px;
+padding: 20px;
+border-radius: 5px;
+}
+
+.article h3 {
+color: #333;
+margin-top: 0;
+}
+
+.article p {
+color: #666;
+font-size: 14px; /* 変更 */
+}
+
+.article a {
+font-size: 14px; /* 変更 */
+color: #007bff;
+}
+
+.article a:hover {
+text-decoration: underline;
+}
+
+@media only screen and (max-width: 600px) {
+.container {
+padding: 10px;
+}
+
+.container > .news-container {
+margin-bottom: 10px;
+}
+}

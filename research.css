@@ -1,0 +1,58 @@
+.container {
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%234cc336' fill-opacity='0.4' fill-rule='evenodd'%3E%3Cpath d='M0 40L40 0H20L0 20M40 40V20L20 40'/%3E%3C/g%3E%3C/svg%3E");  padding-top: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    position: relative; 
+}
+
+.h2{
+font-size: xx-small;
+}
+
+#messageForm {
+    position: absolute; 
+    bottom: 10px; 
+    right: 10px; 
+}
+
+#conversation {
+    text-align: center;
+    background-color: white;
+    margin-top: 20px;
+    overflow-y: auto; 
+    max-height: 600px;
+    box-shadow: #c6c2c2;
+}
+
+.message {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    max-width: 80%; /* メッセージの最大幅 */
+    word-wrap: break-word; /* 長い単語の改行 */
+    animation: slideIn 0.5s ease; /* アニメーション */
+}
+
+#messageForm {
+    position: fixed; /* 固定配置 */
+    bottom: 10px; /* 下からの距離 */
+    right: 10px; /* 右からの距離 */
+    z-index: 1; /* メッセージ入力ボックスを他のコンテンツの上に配置 */
+}
+
+
+@keyframes slideIn {
+    from {
+        opacity: 0; /* 非表示 */
+        transform: translateY(-20px); /* 上からの移動 */
+    }
+    to {
+        opacity: 1; /* 表示 */
+        transform: translateY(0); /* 移動しない */
+    }
+}
